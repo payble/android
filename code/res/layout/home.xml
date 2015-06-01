@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/back_black" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/back_black" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#40000000" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="110dp"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/text_kent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="payble"
+                        android:textColor="#fff"
+                        android:textSize="40sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_signin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/selectorduckfragment"
+                        android:onClick="SignIn"
+                        android:padding="@dimen/bottmargin"
+                        android:text="@string/btn_signin"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#FFF" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="1dp" />
+
+                    <Button
+                        android:id="@+id/btn_registr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/AppColor"
+                        android:onClick="Register"
+                        android:padding="@dimen/bottmargin"
+                        android:text="@string/btn_registr"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#FFF" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

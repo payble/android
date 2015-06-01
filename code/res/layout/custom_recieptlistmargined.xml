@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/margincolor"
+    android:orientation="horizontal"
+    android:paddingBottom="1dp" >
+
+    <TextView
+        android:id="@+id/txtcustomreciept_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1px"
+        android:layout_marginTop="1px"
+        android:layout_weight="1"
+        android:background="@drawable/profile_name_corner"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="11/7"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtcustomreciept_name"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1px"
+        android:layout_weight="0.6"
+        android:background="@color/background"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Virago"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/rel_custm"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="1px"
+        android:layout_marginTop="1px"
+        android:layout_weight=".9"
+        android:background="@drawable/profile_name_show_corner" >
+
+        <TextView
+            android:id="@+id/dollr_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtcustomreciept_total"
+            android:layout_toLeftOf="@+id/txtcustomreciept_total"
+            android:gravity="center_vertical"
+            android:text="$  "
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtcustomreciept_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="54."
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtcustomreciept_totalsub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtcustomreciept_total"
+            android:layout_toRightOf="@+id/txtcustomreciept_total"
+            android:gravity="center_vertical"
+            android:text="75"
+            android:textColor="#000"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</LinearLayout>

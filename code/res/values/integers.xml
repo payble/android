@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="drawer_animTime">500</integer>
+    <integer name="splashTime">2000</integer>
+    <integer name="transtime">1000</integer>
+
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grand"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#20262B"
+        android:orientation="horizontal" >
+
+        <netleon.sansar.kent.support.TextFonts_SubHead
+            android:id="@+id/txtdetail_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:text="Taco Mamacita"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/make_call"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/call_mg"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtdetails_phone_no"
+                android:layout_alignParentBottom="true"
+                android:layout_alignTop="@+id/txtdetails_phone_no"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/image"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_phone" />
+
+            <netleon.sansar.kent.support.TextFonts_SubHead
+                android:id="@+id/txtdetails_phone_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/call_mg"
+                android:text="620 723 8552"
+                android:textColor="#9A9C9E"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#20262B"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/lindetails_1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dp"
+            android:layout_weight="0.8"
+            android:paddingLeft="@dimen/activity_vertical_margin" >
+
+            <RatingBar
+                android:id="@+id/ratingdetails"
+                style="@style/RatingBarSmallAppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:isIndicator="true"
+                android:stepSize="0.01" />
+
+            <netleon.sansar.kent.support.TextFonts_SubHead
+                android:id="@+id/txtdetails_reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ratingdetails"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:text="86 reviews"
+                android:textColor="#9A9C9E"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/call_mg1"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtdetails_get_drection"
+                android:layout_alignTop="@+id/txtdetails_get_drection"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/image"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_direction" />
+
+            <netleon.sansar.kent.support.TextFonts_SubHead
+                android:id="@+id/txtdetails_get_drection"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/call_mg1"
+                android:gravity="center_vertical"
+                android:text="Get Direction "
+                android:textColor="#9A9C9E"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <netleon.sansar.kent.support.TextFonts_SubHead
+            android:id="@+id/txtdetails_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="20"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <netleon.sansar.kent.support.TextFonts_SubHead
+            android:id="@+id/txtdetails_minwait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/txtdetails_time"
+            android:text="minute wait"
+            android:textColor="#888A8B"
+            android:textSize="16sp" />
+
+        <netleon.sansar.kent.support.TextFonts_SubHead
+            android:id="@+id/txtdetails_reservetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/oval"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="5dp"
+            android:text="Reserve Table"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

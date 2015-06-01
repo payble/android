@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/searchBack"
+    android:layout_height="wrap_content" >
+
+    <netleon.sansar.kent.support.TextFonts_SubHead
+        android:id="@+id/txter"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textColor="#000" />
+
+</RelativeLayout>

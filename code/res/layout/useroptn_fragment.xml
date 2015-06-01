@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blackpure"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/relative_profile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="@color/listback"
+                android:orientation="vertical" >
+
+                <netleon.sansar.kent.support.CircleImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/user_profile" />
+
+                <TextView
+                    android:id="@+id/txtduck_user"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="Shane"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/txtduck_view_account"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:singleLine="true"
+                    android:text="@string/view_acc"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FFF" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtduck_find_rest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/selectorduckfragment"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_marker_grey"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/duckMarginExtra"
+                android:text="@string/find_rest"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/txtduck_pay_kent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/selectorduckfragment"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_right"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/duckMarginExtra"
+                android:text="@string/pay_kent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/txtduck_payment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/selectorduckfragment"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_card_pay"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/duckMarginExtra"
+                android:text="@string/payment"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/txtduck_reservation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/selectorduckfragment"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_reserve"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/duckMarginExtra"
+                android:text="@string/resertion"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFF"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/selectorduckfragment"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/txtduck_rec"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_rece_white"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/duckMarginExtra"
+                    android:text="@string/sml_rece"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/txtduck_recnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="@dimen/duckMarginExtra"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtduck_support"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/selectorduckfragment"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_support"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/duckMarginExtra"
+                android:text="@string/support"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/txtduck_logout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selectorduckfragment"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_logout"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/duckMarginExtra"
+                android:text="Logout"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/reluseropt_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/AppColorTrans"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/txtduck_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="CANCEL"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:contentDescription="@string/image"
+                android:src="@drawable/ic_launcher" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

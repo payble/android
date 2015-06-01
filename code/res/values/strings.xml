@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Payble</string>
+    <string name="btn_signin">SIGN IN</string>
+    <string name="cap_name">NESSIE</string>
+    <string name="btn_registr">REGISTER</string>
+    <string name="tag_buttom">DISCOVER LOCAL RESTAURANTS</string>
+    <string name="image">image</string>
+    <string name="signup">Sign Up</string>
+    <string name="name_hint">Name</string>
+    <string name="email">Email</string>
+    <string name="password_hint">Min 5 Characters</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="conect_fb">Connect with Facebook</string>
+    <string name="mobile_hint">Mobile</string>
+    <string name="cancel">CANCEL</string>
+    <string name="create_acc">CREATE ACCOUNT</string>
+    <string name="or">or</string>
+    <string name="register_tag">We use your email and mobile number to send you restaurant confirmation and receipts</string>
+    <string name="name">Name</string>
+    <string name="sign_in_via_facebook">SIGN IN VIA FACEBOOK</string>
+    <string name="f">"   f  "</string>
+    <string name="password">Password</string>
+    <string name="back">BACK</string>
+    <string name="profile">PROFILE</string>
+    <string name="edit">EDIT</string>
+    <string name="save">Save</string>
+    <string name="company">Company</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="review">Review</string>
+    <string name="payment">Payments</string>
+    <string name="summary">Summary</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="tax">Tax</string>
+    <string name="delivery">Kent fee</string>
+    <string name="tip">Tip</string>
+    <string name="total">Total</string>
+    <string name="receipt">RECEIPTS</string>
+    <string name="pay">Pay</string>
+    <string name="username">Molly Bootman</string>
+    <string name="searchfilters">Tap to Search</string>
+    <string name="receipt_tag">Pending receipts provide a timed window for you to approve or change your selected credit card and tip</string>
+    <string name="sortby">Sort By</string>
+    <string name="bestmatch">Best Match</string>
+    <string name="location">Location</string>
+    <string name="distance">Distance</string>
+    <string name="price">Price</string>
+    <string name="category">Category</string>
+    <string name="submit_review">Submit Review</string>
+    <string name="waittime">Wait Time</string>
+    <string name="search">Search</string>
+    <string name="write_review">Write a Review</string>
+    <string name="done"> DONE </string>
+    <string name="review_tag">Star rating will remain anonyoums and comment reviews will include your profile and name</string>
+    <string name="review_text">Your review helps others learn abour great local restaurants. Please dont review this business if recived a freebie for writing this review or if you are in any way connected to owner or employees.</string>
+    <string name="casual">Casual</string>
+    <string name="fancy">Fancy</string>
+    <string name="superise">Surprise Me</string>
+    <string name="_optional_">" (optional)"</string>
+    <string name="app_id">779169015483457</string>
+    <string name="forget_password">Forgot your password ?</string>
+    <string name="loaddata">Please wait...</string>
+    <string name="view_acc">VIEW ACCOUNT</string>
+    <string name="find_rest">Find a Restaurant</string>
+    <string name="pay_kent">Pay with Kent</string>
+    <string name="resertion">Reservation</string>
+    <string name="sml_rece">Receipts</string>
+    <string name="support">Support</string>
+    <string name="pay_tag">This payment method will only be charged when you checkout at a restaurant using Kent.</string>
+    <string name="receipt_frg">Upon clicking pay, you acknowledge and agree to pay the amount listed above and the terms and conditions of Nessie.</string>
+    <string name="frh">kjhfg/sdfg</string>
+ 
+
+</resources>

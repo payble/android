@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_rest_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="Rest. Name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/blackpure" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/margincolor" />
+
+        <TextView
+            android:id="@+id/txt_rest_start"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Start Date-Time"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/blackpure" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/margincolor" />
+
+        <TextView
+            android:id="@+id/txt_rest_end"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="End Date-Time"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/blackpure" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/margincolor" />
+
+        <TextView
+            android:id="@+id/txt_rest_party"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Party Size"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/blackpure" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/margincolor" />
+
+</LinearLayout>

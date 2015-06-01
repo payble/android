@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtreciept_tag"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/activity_vertical_margin"
+        android:text="@string/receipt_tag"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#949494"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linReview_direction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/image"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_direction_gray" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="2dp" >
+
+                    <netleon.sansar.kent.support.TextFonts_SubHead
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Directions"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/blackpure" />
+
+                    <netleon.sansar.kent.support.TextFonts_SubHead
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 min walk"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#989B9D" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/image"
+                    android:paddingBottom="16dp"
+                    android:paddingRight="22dp"
+                    android:paddingTop="16dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_action_collapse" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/margincolor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linReview_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/image"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_call_gray" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="2dp" >
+
+                    <netleon.sansar.kent.support.TextFonts_SubHead
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Call"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/blackpure" />
+
+                    <netleon.sansar.kent.support.TextFonts_SubHead
+                        android:id="@+id/txt_call_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp"
+                        android:text="(615730-8552)"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/image"
+                    android:paddingBottom="16dp"
+                    android:paddingRight="22dp"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/ic_action_collapse" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/margincolor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linReview_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/image"
+                    android:padding="16dp"
+                    android:src="@drawable/browse_menu" />
+
+                <netleon.sansar.kent.support.TextFonts_SubHead
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="2dp"
+                    android:text="Browse the Menu"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackpure" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:contentDescription="@string/image"
+                    android:paddingBottom="16dp"
+                    android:paddingRight="22dp"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/ic_action_collapse" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/margincolor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linReview_bussiness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/image"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_action_message" />
+
+                <netleon.sansar.kent.support.TextFonts_SubHead
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="2dp"
+                    android:text="Message the Business"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackpure" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/image"
+                    android:paddingBottom="16dp"
+                    android:paddingRight="22dp"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/ic_action_collapse" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/margincolor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linReview_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/image"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_action_overflow" />
+
+                <netleon.sansar.kent.support.TextFonts_SubHead
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="2dp"
+                    android:text="More info"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blackpure" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/image"
+                    android:paddingBottom="16dp"
+                    android:paddingRight="22dp"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/ic_action_collapse" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/margincolor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linReviewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:background="@color/margincolor" />
+
+            <netleon.sansar.kent.support.TextFonts_SubHead
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:text="Reviews"
+                android:textColor="@color/blackpure" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linrootlist_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

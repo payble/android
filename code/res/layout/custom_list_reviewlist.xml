@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/margincolor"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/relcustomreviewlist_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/searchBack" >
+
+        <RelativeLayout
+            android:id="@+id/relcustomreviewlist_2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="19dp" >
+
+            <ImageView
+                android:id="@+id/imgcustomreviewlist"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image"
+                android:scaleType="fitXY"
+                android:src="@drawable/thumb" />
+
+            <ImageView
+                android:id="@+id/imgcustomreviewlist_up"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/image" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lincustomreviewlist_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/relcustomreviewlist_2"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RatingBar
+                android:id="@+id/ratingbar_default"
+                style="@style/RatingBarSmallAppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:clickable="false"
+                android:isIndicator="true"
+                android:stepSize="0.01" />
+        </LinearLayout>
+
+        <netleon.sansar.kent.support.TextFonts_SubHead
+            android:id="@+id/txtcustomreviewlist_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="4 days ago"
+            android:textColor="#C4C4C4" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relcustomreviewlist_1"
+        android:background="@color/margincolor"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:background="@color/searchBack"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text=""
+            android:textColor="#333333"
+            android:visibility="visible" />
+
+        <netleon.sansar.kent.support.TextFonts_SubHead
+            android:id="@+id/txtcustomreviewlist_review"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="1dp"
+            android:background="@color/searchBack"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingLeft="23dp"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="5dp"
+            android:text="Taco Mamacita&apos;s food is FANTASTIC.Thw reason they get 4 stars instead of 5 is because you have to pay for chips and salsa.At a Mexican place, really?"
+            android:textColor="#949494" />
+    </LinearLayout>
+
+</RelativeLayout>

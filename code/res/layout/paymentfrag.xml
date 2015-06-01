@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relpayfrag_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/listback" >
+
+        <netleon.sansar.kent.support.TextFonts_Heading
+            android:id="@+id/pay_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="16dp"
+            android:text="PAYMENTS"
+            android:textColor="#FFF"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/butpayfrag_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="BACK"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/butpayfrag_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="EDIT"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viewpayfrag_1"
+        android:layout_below="@+id/relpayfrag_1"
+        android:fillViewport="false"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/papa_rect"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/rect_round_shape_up"
+                    android:orientation="horizontal" >
+
+                    <netleon.sansar.kent.support.TextFonts_SubHead
+                        android:id="@+id/txt_card"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="2px"
+                        android:layout_weight="1"
+                        android:background="@drawable/profile_name_corner"
+                        android:gravity="center_vertical|right"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="Card"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spinpayfrag_card"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="1px"
+                        android:layout_marginTop="2px"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/profile_name_show_corner"
+                        android:enabled="false"
+                        android:gravity="center_vertical|left"
+                        android:inputType="text"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <netleon.sansar.kent.support.TextFonts_SubHead
+                        android:id="@+id/txt_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/background"
+                        android:gravity="center_vertical|right"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="Name"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/edtpayfrag_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="1px"
+                        android:layout_weight="0.5"
+                        android:background="@color/background"
+                        android:enabled="false"
+                        android:gravity="center_vertical|left"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal" >
+
+                    <netleon.sansar.kent.support.TextFonts_SubHead
+                        android:id="@+id/txt_num"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/background"
+                        android:gravity="center_vertical|right"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="CC Num"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/edtpayfrag_num"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="1px"
+                        android:layout_weight="0.5"
+                        android:background="@color/background"
+                        android:enabled="false"
+                        android:gravity="center_vertical|left"
+                        android:inputType="number"
+                        android:maxLength="16"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal" >
+
+                    <netleon.sansar.kent.support.TextFonts_SubHead
+                        android:id="@+id/txt_exp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/background"
+                        android:gravity="center_vertical|right"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="Expiration"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/edtpayfrag_exp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="1px"
+                        android:layout_weight="0.5"
+                        android:background="@color/background"
+                        android:enabled="false"
+                        android:gravity="center_vertical|left"
+                        android:hint="YYYY/MM"
+                        android:inputType="datetime"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal" >
+
+                    <netleon.sansar.kent.support.TextFonts_SubHead
+                        android:id="@+id/txt_ccv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/background"
+                        android:gravity="center_vertical|right"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text="CCV"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/edtpayfrag_ccv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="1px"
+                        android:layout_weight="0.5"
+                        android:background="@color/background"
+                        android:enabled="false"
+                        android:gravity="center_vertical|left"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/butpayfrag_save"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1px"
+                    android:layout_marginRight="1px"
+                    android:background="@drawable/rect_round_shape_down"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="Save"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_pat_tag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/pay_tag"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#949494" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/viewpayfrag_1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

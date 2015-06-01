@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/back_black"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/back_black"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:background="@color/black_header" >
+
+                <TextView
+                    android:id="@+id/txt_cancel_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:onClick="Cancel"
+                    android:text="@string/cancel"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/whitepure" />
+
+                <TextView
+                    android:id="@+id/head_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/create_acc"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#fff" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_fb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/fboval"
+                    android:orientation="horizontal" >
+
+                    <netleon.sansar.kent.support.TextFonts_SubHead
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_vertical_margin"
+                        android:text="@string/f"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/whitepure"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/fbBorder" />
+
+                    <TextView
+                        android:id="@+id/txt_connect_fb"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/conect_fb"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/whitepure" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="#50ffffff" />
+
+                    <netleon.sansar.kent.support.TextFonts_SubHead
+                        android:id="@+id/or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_vertical_margin"
+                        android:text="@string/or"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#fff" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="#50ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/papa_rect"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/rect_round_shape_up"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txt_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/whitepure"
+                            android:gravity="end"
+                            android:padding="@dimen/activity_horizontal_margin"
+                            android:text="@string/name"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#333333"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editsignup_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.6"
+                            android:background="@color/whitepure"
+                            android:gravity="left|center_vertical"
+                            android:hint=""
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="10dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txt_email"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/whitepure"
+                            android:gravity="end"
+                            android:padding="@dimen/activity_horizontal_margin"
+                            android:text="@string/email"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#333333"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editsignup_email"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.6"
+                            android:background="@color/whitepure"
+                            android:gravity="left|center_vertical"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="10dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:typeface="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txt_mobile"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/whitepure"
+                            android:gravity="end"
+                            android:padding="@dimen/activity_horizontal_margin"
+                            android:text="@string/mobile_hint"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#333333"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editsignup_mobile"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.6"
+                            android:background="@color/whitepure"
+                            android:gravity="left|center_vertical"
+                            android:inputType="phone"
+                            android:maxLength="12"
+                            android:paddingLeft="10dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:typeface="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txt_password"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/whitepure"
+                            android:gravity="end"
+                            android:padding="@dimen/activity_horizontal_margin"
+                            android:singleLine="true"
+                            android:text="@string/password"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#333333"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editsignup_pass"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.6"
+                            android:background="@color/whitepure"
+                            android:gravity="left|center_vertical"
+                            android:hint="@string/password_hint"
+                            android:inputType="textPassword"
+                            android:paddingLeft="10dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/forward_arrow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/rect_round_shape_down"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="Register"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_rgistr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:gravity="center"
+                    android:text="@string/register_tag"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#80ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

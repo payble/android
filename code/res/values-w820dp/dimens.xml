@@ -1,0 +1,8 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="actionbarHeight">300dp</dimen>
+    <dimen name="pad">9dp</dimen>
+    <dimen name="spad">12dp</dimen>
+
+</resources>

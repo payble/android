@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#99000000"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/frame_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_header"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <netleon.sansar.kent.support.TextFonts_Heading
+            android:id="@+id/heed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/profile"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff" />
+
+        <netleon.sansar.kent.support.TextFonts_SubHead
+            android:id="@+id/txtprofile_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/back"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+
+        <netleon.sansar.kent.support.TextFonts_SubHead
+            android:id="@+id/txtprofile_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/edit"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_profile"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#50000000" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin" >
+
+                <netleon.sansar.kent.support.CircleImageView
+                    android:id="@+id/imgprofile_cover"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/user_profile" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/papa_rect"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect_round_shape_up"
+                        android:orientation="horizontal" >
+
+                        <netleon.sansar.kent.support.TextFonts_SubHead
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="2px"
+                            android:layout_marginTop="2px"
+                            android:layout_weight="1"
+                            android:background="@drawable/profile_name_corner"
+                            android:gravity="end"
+                            android:padding="@dimen/activity_horizontal_margin"
+                            android:text="@string/name_hint"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#333333"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editprofile_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="2px"
+                            android:layout_marginTop="2px"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/profile_name_show_corner"
+                            android:enabled="true"
+                            android:hint="Name"
+                            android:inputType="text"
+                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            android:textColor="#333333" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal" >
+
+                        <netleon.sansar.kent.support.TextFonts_SubHead
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/background"
+                            android:gravity="end"
+                            android:padding="@dimen/activity_horizontal_margin"
+                            android:text="@string/email"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#333333"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editprofile_email"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="0.5"
+                            android:background="@color/background"
+                            android:enabled="true"
+                            android:hint="Name"
+                            android:inputType="text"
+                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            android:textColor="#333333" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal" >
+
+                        <netleon.sansar.kent.support.TextFonts_SubHead
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/background"
+                            android:gravity="end"
+                            android:padding="@dimen/activity_horizontal_margin"
+                            android:text="@string/mobile_hint"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#333333"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editprofile_phone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="0.5"
+                            android:background="@color/background"
+                            android:enabled="true"
+                            android:hint="Name"
+                            android:inputType="text"
+                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            android:textColor="#333333" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <netleon.sansar.kent.support.TextFonts_SubHead
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/background"
+                            android:gravity="end"
+                            android:padding="@dimen/activity_horizontal_margin"
+                            android:text="@string/password"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#333333"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editprofile_pass"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="0.5"
+                            android:background="@color/background"
+                            android:enabled="true"
+                            android:hint="Min 5 Characters"
+                            android:inputType="textPassword"
+                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            android:textColor="#333333" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/butprofile_save"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect_round_shape_down"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:text=" Save "
+                        android:textColor="#FFF"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <netleon.sansar.kent.support.TextFonts_SubHead
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="@string/register_tag"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
